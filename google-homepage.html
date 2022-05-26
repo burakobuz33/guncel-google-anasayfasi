@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /**************************** SAĞ ÜSTTEKİ LİNKLERİN DİV'i **********************/
+      .top {
+        width: 100%;
+        height: 60px;
+        margin: 6px 0px 6px 0px;
+      }
+
+      .topright {
+        float: right;
+        width: 264px;
+        height: 48px;
+        padding: 0px 0px 0px 32px;
+        margin-right: 6px;
+        box-sizing: border-box;
+      }
+
+      .topright a {
+        text-decoration: none;
+      }
+
+      .topright a:hover {
+        text-decoration: underline;
+      }
+
+      .topright img {
+        border: 3px solid white;
+      }
+
+      #icon2:hover {
+        border: 3px solid #eff0f0;
+      }
+
+      #icon:hover {
+        color: rgb(239, 240, 240, 0.8);
+        z-index: 1;
+      }
+
+      .toprightclear {
+        clear: both;
+      }
+
+      /**************************** LOGONUN BULUNDUĞU DİV ***************************/
+      .image {
+        width: 100%;
+        height: 92px;
+        margin-top: 0;
+      }
+
+      .div_image {
+        margin-top: 185px;
+        height: 92px;
+      }
+
+      /**************************** SEARCH YAPILAN BLOĞUN KODU ***********************/
+      /******* SEARCH TEXT BÖLÜMÜ ********/
+      .search {
+        width: 100%;
+        height: 140px;
+        padding: 20px 0px 0px;
+      }
+
+      .searchbox {
+        width: 100%;
+        padding-top: 5px;
+      }
+
+      .arama_alan {
+        border: 1px solid #dfe1e5;
+        border-radius: 20px;
+        margin-left: 35%;
+        width: 582px;
+        height: 45px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .arama_alani {
+        background-image: url(image/search-logo.jpg); /*önce icon arka plan yapılır*/
+        background-position: 10px 12px; /*bulunacağı yerdeki boyutu ayarlanır*/
+        background-repeat: no-repeat; /*tekrar etmez*/
+        padding: 0px 0px 0px 45px; /*iconun görülebilmesi için boşluk ayarlanır*/
+        border: 1px solid rgb(223, 225, 229);
+        border-radius: 20px;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        width: 480px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .arama_alan:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .arama_alani:focus {
+        outline: none;
+      }
+
+      /******* BUTTON BÖLÜMÜ ********/
+      .button_area {
+        width: 100%;
+        padding: 18px 0px 0px;
+        height: 88px;
+        box-sizing: border-box;
+      }
+
+      .button_alani {
+        margin-left: 33.8%;
+        width: 582px;
+        height: 58px;
+        box-sizing: border-box;
+      }
+
+      .button {
+        border: 1px solid #f2f2f2; /*ÖDEVDE VERİLEN GÖREV*/
+        font: 14 arial, sans-serif; /*ÖDEVDE VERİLEN GÖREV*/
+        color: #5f6368; /*ÖDEVDE VERİLEN GÖREV*/
+        height: 36px; /*ÖDEVDE VERİLEN GÖREV*/
+      }
+
+      [type="submit"]:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      /**************************** DİĞER DİLLER BÖLÜMÜ *******************************/
+
+      .metin_alani {
+        height: 28px;
+        margin: 0px 0px 24px;
+        font: 13 arial, sans-serif;
+        color: #5f6368;
+        letter-spacing: -0.5px;
+        padding-right: 1%;
+      }
+      .metin_alani a {
+        text-decoration: none;
+      }
+
+      .metin_alani a:hover {
+        text-decoration: underline;
+      }
+
+      /**************************** FOOTER KISMI *************************************/
+
+      /***** FOOTER KISMINI SAYFANIN EN ALTINA KOYMAK İÇİN ÖNCEDEN YAZILAN TÜM KODLARI BU ID  
+      İÇİNE YAZILIR *****/
+      #wrapper {
+        min-height: calc(100vh - 101px);
+      }
+
+      .footer {
+        width: 100%;
+      }
+      .footer1 {
+        width: 100%;
+        padding: 15px 30px;
+        font: 15px arial, sans-serif;
+        color: #70757a;
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+      }
+
+      .footer2 {
+        width: 100%;
+        padding: 0px 20px;
+        font: 14px arial, sans-serif;
+        color: #70757a;
+        background-color: #f2f2f2;
+        border: 1px solid rgb(223, 225, 229);
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 46px;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        text-decoration: none;
+        color: #70757a;
+        padding: 15px;
+      }
+
+      li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <!-- ******************************************************************************************
+   **********************************************************************************************
+   **********************************************************************************************
+   ****************************************************************************************** -->
+  <body>
+    <!-- FOOTER KSIMINI EN ALTA YAZMAK İÇİN FOOTER HARİCİ TÜM KODLARI BU ID İÇİNE YAZYARIZ -->
+    <div id="wrapper">
+      <!-- *************************** SAĞ ÜSTTEKİ LİNKLER ******************************-->
+      <div class="top">
+        <div class="topright">
+          <div style="padding: 14px 0 14px 15px; float: left; margin: auto">
+            <a
+              href="https://mail.google.com/mail/u/0/?ogbl"
+              style="color: #000000de; font: 13px arial, sans-serif"
+              >Gmail</a
+            >
+          </div>
+          <div style="padding: 14px 0 14px 15px; float: left; margin: auto">
+            <a
+              href="https://www.google.com.tr/imghp?hl=tr&authuser=0&ogbl"
+              style="color: #000000de; font: 13px arial, sans-serif"
+              >Görseller</a
+            >
+          </div>
+          <div
+            id="icon"
+            style="padding: 10px 0px 14px 14px; float: left; margin: auto"
+          >
+            <a
+              href="https://about.google/products/"
+              title="Google Uygulamaları"
+              style="padding: 14px 8px 14px 8px"
+              ><img
+                src="image/Adsız3.jpg"
+                alt="Profil Resmi"
+                style="border-radius: 100px; width: 23px; height: 23px"
+            /></a>
+          </div>
+          <div style="padding: 6px 4px 9px 4px; float: left; margin: auto">
+            <a href="#" title="Google Hesabı Burak OBUZ burak.obuz02@gmail.com"
+              ><img
+                id="icon2"
+                src="image/ProfilResmi.png"
+                alt="Profil Resmi"
+                style="border-radius: 100px"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *** CLEAR ÖZELLİĞİNİN TEMİZLENMESİ İÇİN -->
+      <div class="toprightclear"></div>
+
+      <!-- *************************** LOGONUN OLDUĞU BÖLÜM ***************************** -->
+      <div class="image" align="center">
+        <div class="div_image">
+          <img src="image/logo.png" alt="Google Logo" height="92" />
+        </div>
+      </div>
+
+      <!-- *** CLEAR ÖZELLİĞİNİN TEMİZLENMESİ İÇİN -->
+      <div class="toprightclear"></div>
+
+      <!-- *************************** SEARCH TEXT ve BUTTONLARIN OLDUĞU BÖLÜM*********** -->
+      <div class="search">
+        <!-- ********SEARCH TEXT BÖLÜMÜ********** -->
+        <div class="searchbox">
+          <div class="arama_alan">
+            <input
+              class="arama_alani"
+              type="text"
+              name="arama"
+              id="bos"
+              title="Ara"
+            />
+            <img
+              src="image/voicelogo.png"
+              alt="Voice Logo"
+              width="24"
+              height="24"
+              style="float: right; margin-top: 10px; margin-right: 15px"
+              title="Sesli Arama Yapın"
+            />
+          </div>
+        </div>
+
+        <!-- ******* BUTONLARIN OLDUĞU BÖLÜM ************************** -->
+        <div class="button_area">
+          <div class="button_alani">
+            <center style="margin-left: 5%">
+              <input
+                class="button"
+                type="submit"
+                value="Google'de Ara"
+                style="margin: 11px 4px; padding: 0px 16px"
+              />
+              <input
+                class="button"
+                type="submit"
+                value="Kendimi Şanslı Hissediyorum"
+                style="margin: 11px 4px; padding: 0px 16px"
+              />
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <!-- **************************** DİLLER BÖLÜMÜ ORTADA **************************** -->
+      <div class="metin_alani">
+        <center style="height: 28px; padding-top: 5px">
+          Google'ı kullanabileceğiniz diğer diller: <a href="">English</a>
+        </center>
+      </div>
+    </div>
+
+    <!-- *************************** FOOTER KISMI ************************************* -->
+    <div class="footer">
+      <div class="footer1">Türkiye</div>
+      <div class="footer2">
+        <ul>
+          <li>
+            <a
+              href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+              >Hakkında</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ads.google.com/intl/tr_tr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+              >Reklam</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://smallbusiness.withgoogle.com/intl/tr_tr/?subid=tr-tr-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=tr-tr-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u"
+              >İşletme</a
+            >
+          </li>
+          <li>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1"
+              >Arama nasıl çalışır?</a
+            >
+          </li>
+
+          <li style="padding-left: 23%">
+            <a
+              href="https://sustainability.google/intl/tr/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=#home"
+              ><span
+                ><img
+                  src="image/yesil-yaprak.png"
+                  alt="Yeşil Yaprak"
+                  style="float: left; width: 18px; height: 18px"
+                />2007'den bu yana karbon nört</span
+              ></a
+            >
+          </li>
+
+          <li style="float: right">
+            <a href="https://policies.google.com/privacy?hl=tr&fg=1"
+              >Gizlilik</a
+            >
+          </li>
+          <li style="float: right">
+            <a href="https://policies.google.com/terms?hl=tr&fg=1">Şartlar</a>
+          </li>
+          <li style="float: right"><a href="#">Ayarlar</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
